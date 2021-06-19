@@ -1,12 +1,18 @@
 import datetime
 
-# AppleScript
+# AppleScript_Notes.app
 
 notes_created_date_command = "osascript -e 'tell application \"Notes\"' \
                             -e 'get get the creation date of notes of the folder \"God witnesses\"' \
                             -e 'end tell'"
 
+notes_name_command = "osascript -e 'tell application \"Notes\"' \
+                            -e 'get get the name of notes of the folder \"God witnesses\"' \
+                            -e 'end tell'"
 
+notes_body_command = "osascript -e 'tell application \"Notes\"' \
+                            -e 'get get the body of notes of the folder \"God witnesses\"' \
+                            -e 'end tell'"
 # MySQl数据库登录信息
 
 host = "localhost"

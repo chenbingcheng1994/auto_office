@@ -89,8 +89,7 @@ class Database():
         print(values_list)
 
         # 生成插入数据库语句
-        insert_sql = "INSERT INTO %s (%s) VALUES (%r,%s,%s,%s,%s,%s,%r,%r);"%(table_name,','.join(insert_varible), \
-                    EXECUTING_TIME,DATETIME,LOCATION,WEATHER,TITLE,BODY,PICTURE,OTHERS)
+        insert_sql = "INSERT INTO %s (%s) VALUES (%r,%s,%s,%s,%s,%s,%r,%r);"%(table_name,','.join(insert_varible),EXECUTING_TIME,DATETIME,LOCATION,WEATHER,TITLE,BODY,PICTURE,OTHERS)
         print(insert_sql)
         cursor.execute(insert_sql)
         print(cursor.fetchall())
@@ -104,12 +103,12 @@ class Database():
 if __name__ =='__main__':
 
     # 初始化
-    EXECUTING_TIME = '2021-06-10'
-    DATETIME = '2021-06-11'
-    LOCATION = 'LOCATION'
-    WEATHER = 'WEATHER'
-    TITLE = 'TITLE'
-    BODY = 'BODY'
+    EXECUTING_TIME = "2021-06-19"
+    DATETIME = "'Monday 14 June 2021 at 17:24:23'"
+    LOCATION = "'shenzhen'"
+    WEATHER = "'sunny'"
+    TITLE = "'我和奥林'"
+    BODY = "'wearehappy'"
     PICTURE = '//Users//chenbingcheng'
     OTHERS = '//Users//chenbingcheng'
 
